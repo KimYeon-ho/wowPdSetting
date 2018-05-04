@@ -100,5 +100,6 @@ modules.xml
 
 ### custom ###
 /node_modules/
+.gitkeep
 
 # End of https://www.gitignore.io/api/macos,webstorm+iml,visualstudiocode
