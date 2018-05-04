@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* samsung reset */
+html, body {height:auto;overflow:visible;}
+body {min-width:320px;width:100%;overflow-x:hidden;}
+html.ltr .ss_samsung.pdp_standard #content .features-module .feature-notebook {float:none;overflow:hidden;max-width:100%;max-height:auto;position:relative;width:100%;}
+.new_sec_pdp {background:#fff; font-family:'SamsungOneKorean'; word-break:keep-all;-webkit-font-smoothing:antialiased;min-width:320px;max-width:1440px;position:relative;margin:0 auto;}
+.new_sec_pdp > .feature-notebook, .new_sec_pdp > .feature  {min-width:320px;}
+.ss_samsung p {margin-bottom:0;}
+.ss_samsung .feature-notebook {float:none;position:relative;}
+.feature-notebook {outline:0 !important;}
+.feature-notebook .hidden-txt {position: absolute;width:0px;height:0px;overflow:hidden;font-size:0;line-height:0;}
+
+/* video 공통*/
+.video-wrap{position:relative; width:100%;}
+.video-wrap .video-pc {display:block !important;}
+.video-wrap .video-mo {display:none !important;}
+.video-wrap video { vertical-align: top; visibility: visible; width: 100%; height:100%;  border: 0; }
+.video-wrap .video { position: relative; overflow: hidden; }
+.video-wrap .video img { position: absolute; top: 0; left: 0; width: 100%; display: block; }
+.video .play_btn { opacity: 0; display: none; position: absolute; width: 126px; height: 40px; color: #fff; font-size: 18px; line-height: 1.2; padding: 11px 0 11px 48px; box-sizing: border-box; background: url('http://images.samsung.com/is/image/samsung/sec-html-feature-vr10m7020w9-common-pc005?$ORIGIN_PNG$&fmt=png-alpha') no-repeat left center; background-size: 100% 100%; top: 30px; right: 30px; overflow: hidden; }
+
+@font-face {
+	font-family:'SamsungOneKorean';
+	src:url(http://cdn.Samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot);
+	src:url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot?#iefix) format("embedded-opentype"),
+	url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff2) format("woff2"),
+	url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff) format("woff"),
+	url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.ttf) format("truetype");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'SamsungOneKorean';
+	src:url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot);
+	src:url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot?#iefix) format("embedded-opentype"),
+	url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff2) format("woff2"),
+	url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff) format("woff"),
+	url(http://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.ttf) format("truetype");
+	font-weight:bold;
+	font-style:normal
+}
