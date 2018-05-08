@@ -13,7 +13,7 @@
     - kv가 없는 경우 ```<!-- split _kv.html --> ~ <!-- split end -->``` 를 지워준다.
 - **public/css/new_sec_pdp.css**
     - 벤더 프리픽스는 빌드시 자동으로 적용되니 따로 설정하지 않는다.
-    부분적으로 수동 설정을 하기 원할 경우 해당 셀렉터 내에 ```/*! autoprefixer: OFF */``` 를 삽입한다.
+    - 부분적으로 수동 설정을 하기 원할 경우 해당 셀렉터 내에 ```/*! autoprefixer: OFF */``` 를 삽입한다.
 - **public/js/inlineCode.js**
     - AEM 빌드시 ```isAEM = false``` 해당 값을 ```isAEM = true``` 로 치환하므로 이를 통해 분기처리를 한다.
 
