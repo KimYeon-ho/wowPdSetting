@@ -6,10 +6,8 @@
 3. ```npm i```를 입력하여 설정된 라이브러리를 받는다.
 
 
-## 작업시 주의사항
-- **public/html/_layout.html**
-    - 기본 템플릿이므로 수정, 삭제하지 않는다.
-- **public/html/**index.html**
+## 작업시 유의사항
+- **public/html/index.html**
     - kv가 없는 경우 ```<!-- split _kv.html --> ~ <!-- split end -->``` 를 지워준다.
 - **public/css/new_sec_pdp.css**
     - 벤더 프리픽스는 빌드시 자동으로 적용되니 따로 설정하지 않는다.
