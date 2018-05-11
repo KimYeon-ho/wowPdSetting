@@ -121,9 +121,9 @@ gulp.task('extraction:aem', ['html:inline'], () => {
 });
 
 // AEM 전달용 txt 파일 추출 - kv
+let dirs = __dirname.indexOf('/') !== -1 ? __dirname.split('/').slice(-1)[0] : __dirname.split('\\').slice(-1)[0];
 gulp.task('extraction:txt_kv', () => {
-    let _bin = _public + '/bin/html',
-        dirs = __dirname.split('/').slice(-1)[0];
+    let _bin = _public + '/bin/html';
     return gulp.src([_bin + '/_style.html', _bin + '/_kv.html'])
         .pipe(concat('html_feature_' + dirs + '_kv.txt'))
         .pipe(lec({
@@ -135,8 +135,7 @@ gulp.task('extraction:txt_kv', () => {
 
 // AEM 전달용 txt 파일 추출 - content
 gulp.task('extraction:txt_content', ['extraction:txt_kv'], () => {
-    let _bin = _public + '/bin/html',
-        dirs = __dirname.split('/').slice(-1)[0];
+    let _bin = _public + '/bin/html';
     return gulp.src([_bin + '/_content.html', _bin + '/_script.html'])
         .pipe(concat('html_feature_' + dirs + '_content.txt'))
         .pipe(lec({
@@ -148,8 +147,7 @@ gulp.task('extraction:txt_content', ['extraction:txt_kv'], () => {
 
 // AEM 전달용 txt 파일 추출 - total
 gulp.task('extraction:txt', () => {
-    let _bin = _public + '/bin/html',
-        dirs = __dirname.split('/').slice(-1)[0];
+    let _bin = _public + '/bin/html';
     return gulp.src([_bin + '/style.html', _bin + '/kv.html', _bin + '/content.html', _bin + '/script.html'])
         .pipe(wrapper({
             footer: '\n'
