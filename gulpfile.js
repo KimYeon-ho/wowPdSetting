@@ -15,7 +15,8 @@ const
     lec = require('gulp-line-ending-corrector'),
     htmlsplit = require('gulp-htmlsplit'),
     browserSync = require('browser-sync').create(),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    watch = require('gulp-watch');
 
 let // txt 파일 kv, content 분할 여부
     isTxtDivision = true,
@@ -187,16 +188,18 @@ gulp.task('server:dist', ['extraction:aem'], () => {
 /**
  * 파일변경 감지
  */
-let reloadFunc = () => gulp.src(_public + '/html/_layout.html').pipe(browserSync.reload({stream: true}));
+let reloadFunc = () => gulp.src(_public + '/layout.html').pipe(browserSync.reload({stream: true}));
 gulp.task('watch:src', () => {
     gulp.watch(_public + '/html/*.html', ['extraction:local']);
     gulp.watch(_public + '/css/*.css', reloadFunc);
     gulp.watch(_public + '/js/*.js', reloadFunc);
+    watch(_public + '/is/**/*', reloadFunc);
 });
 gulp.task('watch:dist', () => {
     gulp.watch(_public + '/html/*.html', ['extraction:aem']);
     gulp.watch(_public + '/css/*.css', ['extraction:aem']);
     gulp.watch(_public + '/js/*.js', ['extraction:aem']);
+    watch(_public + '/is/**/*', ['extraction:aem']);
 });
 
 /**
