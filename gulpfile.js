@@ -58,7 +58,9 @@ gulp.task('js:uglify', () => {
         .pipe(babel({
             presets: ['env']
         }))
-        .pipe(replace('isAEM = false', 'isAEM = true'))
+        .pipe(replace('../is/', '//images.samsung.com/is/'))
+        .pipe(replace('.jpg', '?$ORIGIN_JPG$'))
+        .pipe(replace('.png', '?$ORIGIN_PNG$&fmt=png-alpha'))
         .pipe(concat('js.min.js')) // all.js 라는 파일명으로 병합
         // .pipe(wrapper({
         //     header: ';(function(win,doc,callback){\'use strict\';callback=callback||function(){};function detach(){if(doc.addEventListener){doc.removeEventListener(\'DOMContentLoaded\',completed);}else{doc.detachEvent(\'onreadystatechange\',completed);}}function completed(){if(doc.addEventListener||event.type===\'load\'||doc.readyState===\'complete\'){detach();callback(window,window.jQuery);}}function init(){if (doc.addEventListener){doc.addEventListener(\'DOMContentLoaded\',completed);}else{doc.attachEvent(\'onreadystatechange\',completed);}}init();})(window,document,function(win,$){',
