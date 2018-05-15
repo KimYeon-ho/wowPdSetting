@@ -4,7 +4,7 @@
 1. proxy 설정이 안되어있는 경우 터미널(windows : cmd.exe)을 통해 [설정](http://13.124.129.30:8060/Team3/javascript/wikis/Tips/npm-proxy-%EC%84%A4%EC%A0%95)한다.
 2. node.js 를 [설치](https://nodejs.org/ko/)한다. (안정적인 버전을 추천)
 3. 설치를 완료하고 터미널에 ```node -v``` 와 ```npm -v``` 를 입력하면 설치된 버전을 확인할 수 있다.
-4. ```sudo npm i -g gulp``` (windows : ```npm i -g gulp gulp-cli```)를 입력하면 gulp 기본 설치가 완료된다.
+4. ```sudo npm i -g gulp``` (windows : ```npm i -g gulp```)를 입력하면 gulp 기본 설치가 완료된다.
 5. 여기까지 완료하였으면 이후 프로젝트에서 1~4번은 생략해도 된다.
 6. 프로젝트를 생성해야 하는 경우 작업할 프로젝트 위치에 소스를 [다운로드](http://13.124.129.30:8060/Team3/wow-project-setting/repository/master/archive.zip)한 이후 svn에 아래 항목을 Import 한다.
     - public/css
