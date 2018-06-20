@@ -1,6 +1,5 @@
 # WOW PD 작업 가이드
-
-> 설명하기에 앞서 잘 모르는 용어나 설치 관련 자세한 방법은 [구글링](http://www.google.com/)으로:)
+설명하기에 앞서 잘 모르는 용어나 설치 관련 자세한 방법은 [구글링](http://www.google.com/)으로:)
 
 ## Gulp 설치하기
 1. proxy 설정이 안되어있는 경우 터미널(windows : 시작 - 실행 - cmd 입력)을 통해 [설정](http://13.124.129.30:8060/Team3/javascript/wikis/Tips/npm-proxy-%EC%84%A4%EC%A0%95)한다.
@@ -28,9 +27,9 @@
     - public/js
 
 ## 작업시 유의사항
-- **public/html/index.html**
+- public/html/index.html
     - kv가 없는 프로젝트인 경우 ```<!-- split _kv.html --> ~ <!-- split end -->``` 영역 전체를 지워준다.
-- **public/css/new_sec_pdp.css**
+- public/css/new_sec_pdp.css
     - 벤더 프리픽스는 빌드시 자동으로 적용되니 따로 설정하지 않는다.
     - 부분적으로 수동 설정을 하기 원할 경우 해당 셀렉터 내에 ```/*! autoprefixer: OFF */``` 를 삽입한다.
 
